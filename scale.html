@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature conversion</title>
+    <script src="https://kit.fontawesome.com/9bdeb6820c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scale.css">
+
+    
+</head>
+<body>
+    <div>
+      <h1>Temperature Converter<i class="fa-solid fa-temperature-three-quarters fa-xl" style="color: #6865e6;"></i></h1> 
+      <label for="tempInput">Enter Temperature:</label>
+      <input type="number" id="tempInput">
+      <select id="tempUnit">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+     <button onclick="convertTemperature()">Convert</button>
+
+     <h2>Converted Temperature:</h2>
+     <p id="resultCelsius"></p>
+     <p id="resultFahrenheit"></p>
+     <p id="resultKelvin"></p>
+ </div>
+<script src="scale.js"></script>
+</body>
+</html>
